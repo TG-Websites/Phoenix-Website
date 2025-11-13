@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Phoenix Additives Chemicals</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F5FAFB] text-gray-800">
+
+  <!-- HEADER / NAVBAR (FIXED) -->
+  <header class="fixed top-0 w-full z-50 glass shadow bg-white/80 backdrop-blur">
+    <div class="container mx-auto flex justify-between items-center p-4">
+
+      <!-- Logo -->
+      <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
+
+      <!-- Desktop Menu -->
+      <nav class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8 text-black font-medium">
+        <a href="./index.html" class="nav-link hover:text-[#0A3A45]">Home</a>
+        <a href="./about.html" class="nav-link hover:text-[#0A3A45]">About</a>
+        <a href="./product.html" class="nav-link hover:text-[#0A3A45]">Products</a>
+        <a href="./blog.html" class="nav-link hover:text-[#0A3A45]">Blog</a>
+        <a href="./Contact.html" class="nav-link hover:text-[#0A3A45]">Contact</a>
+      </nav>
+
+      <!-- CTA Desktop -->
+      <button
+        class="hidden md:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+        Enquire Now
+      </button>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuToggle" class="md:hidden text-black text-3xl">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-white/95 backdrop-blur-md p-6 space-y-4 shadow-md md:hidden">
+      <a href="#home" class="mobile-link block text-black font-medium">Home</a>
+      <a href="#about" class="mobile-link block text-black font-medium">About</a>
+      <a href="#products" class="mobile-link block text-black font-medium">Products</a>
+      <a href="#blog" class="mobile-link block text-black font-medium">Blog</a>
+      <a href="#contact" class="mobile-link block text-black font-medium">Contact</a>
+
+      <button class="w-full px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+        Enquire Now
+      </button>
+    </div>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      mobileMenu.classList.add("hidden");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("header")) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  </script>
+
+  <!-- HERO SECTION -->
+  <section class="w-full bg-gradient-to-r from-[#0A3A45] via-[#145766] to-[#0A3A45] text-white pt-28 pb-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">About Phoenix Additives Chemicals</h1>
+      <p class="mt-4 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+        A trusted name in the Indian B2B chemical & manufacturing industry, providing
+        high-performance additives with consistent quality and technical reliability.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPANY INTRO -->
+  <section class="max-w-7xl mx-auto px-6 py-16 bg-white">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-semibold mb-4 text-[#0A3A45]">Who We Are</h2>
+        <p class="leading-7 text-gray-700 mb-4">
+          Phoenix Additives Chemicals is a professionally driven manufacturer and supplier of
+          industrial additives and speciality chemicals. With years of technical expertise,
+          we serve a wide range of industries including plastics, rubber, coatings,
+          petrochemicals, packaging, engineering, and more.
+        </p>
+        <p class="leading-7 text-gray-700">
+          Our commitment to quality, innovation, and reliability has positioned us as a
+          preferred partner for companies seeking stable supply and consistent product performance.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="https://media.istockphoto.com/id/2199122005/photo/male-and-female-engineers-work-using-laptop-and-tablet-in-gas-refineries-and-oil-refinery.webp?a=1&b=1&s=612x612&w=0&k=20&c=Rz0kCrWYYn-kq8qXHhrnfs2FN57ktLF4HpmZxdIBSuM="
+          alt="Factory Image" class="w-full rounded-xl shadow-md object-cover h-72" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES (ALTERNATE LIGHT BLUE BACKGROUND) -->
+  <section class="bg-[#E7F4F7] py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <h3 class="text-3xl font-bold text-center text-[#0A3A45] mb-10">Our Core Values</h3>
+
+      <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <!-- Value 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-[#A7D8DE]">
+          <h4 class="font-semibold text-lg mb-2 text-[#0A3A45]">Integrity & Transparency</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Every partnership is built on honesty, fairness, and accountability. We believe in ethical and transparent
+            business practices.
+          </p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-[#A7D8DE]">
+          <h4 class="font-semibold text-lg mb-2 text-[#0A3A45]">Quality Excellence</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Delivering premium additives that meet and exceed industry standards, ensuring superior durability and
+            performance.
+          </p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-[#A7D8DE]">
+          <h4 class="font-semibold text-lg mb-2 text-[#0A3A45]">Customer-Centric Approach</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Our customers are at the heart of our operations — we focus on their goals, providing tailored and reliable
+            chemical solutions.
+          </p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-[#A7D8DE]">
+          <h4 class="font-semibold text-lg mb-2 text-[#0A3A45]">Reliability & Consistency</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We ensure uninterrupted and timely supplies with efficient logistics and dependable sourcing partners.
+          </p>
+        </div>
+
+        <!-- Value 5 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-[#A7D8DE]">
+          <h4 class="font-semibold text-lg mb-2 text-[#0A3A45]">Innovation & Improvement</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We explore global technologies to enhance product quality, efficiency, and sustainability across the
+            laminate industry.
+          </p>
+        </div>
+
+        <!-- Value 6 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-[#A7D8DE]">
+          <h4 class="font-semibold text-lg mb-2 text-[#0A3A45]">Sustainability & Responsibility</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Promoting eco-friendly and responsible sourcing practices, contributing to a safer and sustainable future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / VALUES (WHITE BG) -->
+  <section class="bg-white py-16 border-t border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10 text-[#0A3A45]">Our Purpose & Values</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-[#F5FAFB] p-8 rounded-xl shadow-sm">
+          <h3 class="text-xl font-semibold mb-3 text-[#0A3A45]">Mission</h3>
+          <p class="text-gray-700 leading-7">
+            To deliver high-quality speciality chemicals that enable industries to achieve
+            better efficiency, improved performance, and sustainable growth.
+          </p>
+        </div>
+
+        <div class="bg-[#F5FAFB] p-8 rounded-xl shadow-sm">
+          <h3 class="text-xl font-semibold mb-3 text-[#0A3A45]">Vision</h3>
+          <p class="text-gray-700 leading-7">
+            To be recognized as a trusted global brand known for product quality, technical
+            expertise, and long-term client partnerships.
+          </p>
+        </div>
+
+        <div class="bg-[#F5FAFB] p-8 rounded-xl shadow-sm">
+          <h3 class="text-xl font-semibold mb-3 text-[#0A3A45]">Values</h3>
+          <p class="text-gray-700 leading-7">
+            Integrity, Innovation, Quality, Commitment, and Customer-Centric Approach.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MD MESSAGE (ALTERNATE LIGHT BLUE BG) -->
+  <section class="bg-[#E7F4F7] py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Managing Director" class="w-full rounded-xl shadow-md object-cover h-72" />
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-semibold mb-4 text-[#0A3A45]">Message from Our Managing Director</h2>
+        <p class="leading-7 text-gray-700 mb-4">
+          “At Phoenix Additives Chemicals, our focus has always been on building trust through
+          consistent quality and strong technical understanding. We believe in long-term
+          partnerships and continuously work towards improving processes, safety, and product
+          excellence.”
+        </p>
+        <p class="text-gray-700 leading-7">
+          We remain committed to supporting our clients with dependable supply,
+          transparent communication, and evolving solutions that match modern industrial needs.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFRASTRUCTURE & QA/QC (WHITE) -->
+  <section class="bg-white py-16 border-t">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10 text-[#0A3A45]">Infrastructure & Quality Assurance</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-[#F5FAFB] p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2 text-[#0A3A45]">Modern Production Facility</h3>
+          <p class="leading-7 text-gray-700">
+            Well-equipped plant ensuring consistent batch quality and high production capacity.
+          </p>
+        </div>
+
+        <div class="bg-[#F5FAFB] p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2 text-[#0A3A45]">Lab Testing & QA/QC</h3>
+          <p class="leading-7 text-gray-700">
+            Each product batch is tested for compliance, stability, and performance parameters.
+          </p>
+        </div>
+
+        <div class="bg-[#F5FAFB] p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2 text-[#0A3A45]">Certifications</h3>
+          <p class="leading-7 text-gray-700">
+            ISO / REACH / RoHS aligned processes for manufacturing, safety, and handling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT LOGOS (LIGHT BLUE ALT) -->
+  <section class="py-16 bg-[#E7F4F7]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10 text-[#0A3A45]">Our Clients</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
+        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
+        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
+        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION (DARK TEAL) -->
+  <section class="bg-[#0A3A45] text-white py-12 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Looking to Source Quality Additives?</h2>
+    <p class="text-gray-200 mb-6">Get in touch with us for quotations, samples, or technical guidance.</p>
+
+    <button id="ctaBtn"
+      class="px-8 py-3 bg-[#A7D8DE] hover:bg-[#8ecfd6] rounded-md text-black font-semibold transition">
+      Enquire Now
+    </button>
+  </section>
+
+  <!-- Footer-Sections -->
+  <footer class="bg-black text-white pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-12 text-center md:text-left">
+
+      <!-- COLUMN 1: LOGO + BRAND INFO -->
+      <div class="flex flex-col items-center md:items-start">
+        <img src="./assets/pheonix-logo.png" alt="Phoenix Logo" class="w-20 h-20 mb-4">
+        <p class="text-gray-300 text-sm leading-relaxed max-w-xs">
+          Phoenix Additives is a trusted Indian chemical brand providing
+          high-performance additive solutions for various industries.
+        </p>
+
+        <div class="flex gap-4 mt-4 text-xl justify-center md:justify-start">
+          <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- COLUMN 2: QUICK LINKS -->
+      <div>
+        <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="#home" class="hover:text-[#A7D8DE]">Home</a></li>
+          <li><a href="#about" class="hover:text-[#A7D8DE]">About Us</a></li>
+          <li><a href="#products" class="hover:text-[#A7D8DE]">Products</a></li>
+          <li><a href="#industries" class="hover:text-[#A7D8DE]">Industries</a></li>
+          <li><a href="#contact" class="hover:text-[#A7D8DE]">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3: PRODUCT LINKS -->
+      <div>
+        <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Our Products</h3>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="#" class="hover:text-[#A7D8DE]">Release Agent</a></li>
+          <li><a href="#" class="hover:text-[#A7D8DE]">Wetting Agent</a></li>
+          <li><a href="#" class="hover:text-[#A7D8DE]">Gloss Enhancer</a></li>
+          <li><a href="#" class="hover:text-[#A7D8DE]">Defoamer</a></li>
+          <li><a href="#" class="hover:text-[#A7D8DE]">Anti Blocking</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 4: HEAD OFFICE -->
+      <div>
+        <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Head Office</h3>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Unit No.12, Borivali Ganjawala CHS. LTD.<br>
+          S.V. Road, Borivali (W),<br>
+          Mumbai – 400092
+        </p>
+
+        <p class="text-gray-300 text-sm mt-3"><strong>📞 Phone:</strong> +91 98694 76258</p>
+        <p class="text-gray-300 text-sm"><strong>✉️ Email:</strong> pacindia@hotmail.com</p>
+      </div>
+
+      <!-- COLUMN 5: FACTORY ADDRESS + SUBSCRIBE -->
+      <div>
+        <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Factory Address</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          Shree Ganesh Warehouse,<br>
+          Godown No. 556, Bhoir Compound,<br>
+          Near Padmavati Hotel,<br>
+          Village – VAL, Bhiwandi – 421302
+        </p>
+
+        <form class="mt-4">
+          <input type="email" placeholder="Your Email" class="w-full p-2 rounded-md text-black mb-2" required>
+          <button type="submit"
+            class="w-full bg-[#A7D8DE] text-black py-2 rounded-md font-semibold hover:bg-[#8ecfd6] transition">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="border-t border-gray-800 mt-10 pt-4 text-center text-gray-400 text-sm">
+      <p>© 2025 Phoenix Additives. All Rights Reserved.</p>
+      <p>Designed & Developed by
+        <span class="text-[#A7D8DE] font-semibold">Thundergits Technology</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- SIMPLE JS -->
+  <script>
+    document.getElementById("ctaBtn").addEventListener("click", function () {
+      window.location.href = "/contact.html"; // change to your RFQ page
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phoenix Additives | Chemicals & Additives</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <!-- HEADER / NAVBAR (FIXED) -->
+  <header class="fixed top-0 w-full z-50 glass shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+
+      <!-- Logo -->
+      <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
+
+      <!-- Desktop Menu -->
+      <nav class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8 text-black font-medium">
+        <a href="#home" class="nav-link hover:text-[#0A3A45]">Home</a>
+        <a href="./about.html" class="nav-link hover:text-[#0A3A45]">About</a>
+        <a href="./product.html" class="nav-link hover:text-[#0A3A45]">Products</a>
+        <a href="./blog.html" class="nav-link hover:text-[#0A3A45]">Blog</a>
+        <a href="./Contact.html" class="nav-link hover:text-[#0A3A45]">Contact</a>
+      </nav>
+
+      <!-- CTA Desktop -->
+      <button
+        class="hidden md:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+        Enquire Now
+      </button>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuToggle" class="md:hidden text-black text-3xl">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-white/90 backdrop-blur-md p-6 space-y-4 shadow-md md:hidden">
+
+      <a href="#home" class="mobile-link block text-black font-medium">Home</a>
+      <a href="#about" class="mobile-link block text-black font-medium">About</a>
+      <a href="#products" class="mobile-link block text-black font-medium">Products</a>
+      <a href="#blog" class="mobile-link block text-black font-medium">Blog</a>
+      <a href="#contact" class="mobile-link block text-black font-medium">Contact</a>
+
+      <button class="w-full px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+        Enquire Now
+      </button>
+
+    </div>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+
+    // Toggle menu open/close
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Auto-close menu when clicking any link
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Auto-close menu when scrolling
+    window.addEventListener("scroll", () => {
+      mobileMenu.classList.add("hidden");
+    });
+
+    // Auto-close menu if user taps outside
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("header")) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  </script>
+
+
+
+
+  <!-- Hero Section -->
+  <div class="relative w-full overflow-hidden" id="carousel">
+
+    <!-- Carousel wrapper -->
+    <div class="flex transition-transform duration-700 ease-in-out" id="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
+        <img src="https://t4.ftcdn.net/jpg/06/81/01/65/240_F_681016576_TBgiaTgm9OhTDZLp2F4bHvCDj6MMwaoB.jpg"
+          alt="Banner image" class="w-full h-full object-cover">
+
+        <!-- Bottom text container -->
+        <div
+          class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 via-black/40 px-4 sm:px-12 lg:px-20 py-6 text-left">
+          <h1 class="text-xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-snug">
+            Industrial Chemical Solutions for Every Sector
+          </h1>
+          <p class="text-black
+        -200 mb-5 max-w-md sm:max-w-xl text-sm sm:text-base">
+            From manufacturing to water treatment, we deliver premium-quality chemicals
+            engineered for safety, reliability, and consistent performance.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+            <a href="#product"
+              class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
+              Explore Products
+            </a>
+            <a href="#contact"
+              class="px-5 py-2 sm:px-6 sm:py-3 border border-white text-white rounded-lg font-medium text-sm sm:text-base text-center">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
+        <img src="https://t3.ftcdn.net/jpg/02/70/07/86/240_F_270078669_yrPTWIt3OaQaeHCei7Rnk41BbF26ToTI.jpg"
+          alt="Banner image" class="w-full h-full object-cover">
+
+        <div
+          class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 via-black/40 px-4 sm:px-12 lg:px-20 py-6 text-left">
+          <h1 class="text-xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-snug">
+            Specialty Chemicals with Global Standards
+          </h1>
+          <p class="text-gray-200 mb-5 max-w-md sm:max-w-xl text-sm sm:text-base">
+            Our wide range of specialty chemicals are designed for performance, innovation,
+            and sustainability — powering industries around the world.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+            <a href="#product"
+              class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
+              View Products
+            </a>
+            <a href="#contact"
+              class="px-5 py-2 sm:px-6 sm:py-3 border border-white text-white rounded-lg font-medium text-sm sm:text-base text-center">
+              Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
+        <img src="https://t3.ftcdn.net/jpg/01/82/05/36/240_F_182053644_zIi8oy7pGrTA0qHk4FV2kx1aOlSf41bt.jpg"
+          alt="Banner image" class="w-full h-full object-cover">
+
+        <div
+          class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 via-black/40 px-4 sm:px-12 lg:px-20 py-6 text-left">
+          <h1 class="text-xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-snug">
+            Trusted Partner in Chemical Manufacturing
+          </h1>
+          <p class="text-gray-200 mb-5 max-w-md sm:max-w-xl text-sm sm:text-base">
+            Backed by years of expertise, we deliver safe, certified, and eco-friendly
+            chemical solutions that meet your business requirements effectively.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+            <a href="#product"
+              class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
+              Browse Catalog
+            </a>
+            <a href="#contact"
+              class="px-5 py-2 sm:px-6 sm:py-3 border border-white text-white rounded-lg font-medium text-sm sm:text-base text-center">
+              Connect With Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button id="prevBtn" onclick="prevSlide()"
+      class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 text-white text-2xl sm:text-4xl px-3 py-1 sm:px-4 sm:py-2 rounded-full hover:bg-black/60 z-20">
+      &lt;
+    </button>
+
+    <button id="nextBtn" onclick="nextSlide()"
+      class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 text-white text-2xl sm:text-4xl px-3 py-1 sm:px-4 sm:py-2 rounded-full hover:bg-black/60 z-20">
+      &gt;
+    </button>
+  </div>
+
+
+
+  <!-- JavaScript -->
+  <script>
+    const carousel = document.getElementById('carousel');
+    const carouselInner = document.getElementById('carousel-inner');
+    const slides = Array.from(carouselInner.children);
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const intervalTime = 3000; // 3 seconds
+    let autoSlideTimer = null;
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      autoSlideTimer = setInterval(nextSlide, intervalTime);
+    }
+
+    function stopAutoSlide() {
+      if (autoSlideTimer) {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = null;
+      }
+    }
+
+    function resetAutoSlide() {
+      startAutoSlide();
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+
+    carousel.addEventListener('mouseenter', stopAutoSlide);
+    carousel.addEventListener('mouseleave', startAutoSlide);
+
+    // Touch swipe for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    carousel.addEventListener('touchstart', (e) => {
+      stopAutoSlide();
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    carousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const dx = touchEndX - touchStartX;
+      const threshold = 50;
+      if (dx > threshold) prevSlide();
+      else if (dx < -threshold) nextSlide();
+      resetAutoSlide();
+    }, { passive: true });
+
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') {
+        nextSlide();
+        resetAutoSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+        resetAutoSlide();
+      }
+    });
+
+    updateCarousel();
+    startAutoSlide();
+  </script>
+
+
+
+  <!-- About Us -->
+  <section id="about" class="relative bg-gray-50 py-16" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-10">
+
+      <!-- Left Side: Image -->
+      <div class="w-full lg:w-1/2">
+        <img
+          src="https://media.istockphoto.com/id/1309776254/photo/modern-empty-biological-applied-science-laboratory-with-technological-microscopes-glass-test.jpg?s=612x612&w=0&k=20&c=a5z0iWWpmqFzfdn0Dk8ysEIYyZVLGjYttHbcaBCKTLE="
+          alt="About Phoenix Additives Chemicals" class="w-full h-[450px] object-cover rounded-2xl shadow-lg">
+      </div>
+
+      <!-- Right Side: Text Content -->
+      <div class="w-full lg:w-1/2">
+        <h2 class="text-3xl sm:text-4xl font-bold text-black-900 mb-5 border-l-4 border-#A7D8DE pl-3">
+          About Us
+        </h2>
+
+        <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+          <strong>Phoenix Additives Chemicals</strong>, established in 2017, is one of India’s leading suppliers and
+          importers of specialty additive chemicals,
+          catering exclusively to the Laminate and Pre-Laminate industry. We specialize in providing high-quality
+          additives used in decorative low-pressure
+          pre-laminated MDF, particle boards, and high-pressure laminates — ensuring superior finish, durability, and
+          performance.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+          With a strong focus on the Indian market, we have become the first choice for major laminate and wood panel
+          manufacturers across the country.
+          Built on fairness, transparency, and customer-centric practices, Phoenix Additives Chemicals ensures
+          consistent quality, reliable imports, and
+          prompt service — delivering not just products, but complete solutions.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mission & Vision Section -->
+    <div class="max-w-7xl mx-auto mt-16 px-6 lg:px-12 text-center">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-#A7D8DE mb-3">Our Mission</h3>
+          <p class="text-gray-700 leading-relaxed">
+            To provide the Indian laminate and pre-laminate industry with high-quality specialty additive chemicals
+            through fair trade, reliable supply, and customer-focused solutions.
+            We aim to bridge the gap between global innovation and local manufacturing needs, ensuring that our clients
+            receive consistent quality, convenience, and value in every delivery.
+          </p>
+        </div>
+
+        <div class="glass bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-#A7D8DE mb-3">Our Vision</h3>
+          <p class="text-gray-700 leading-relaxed">
+            To be recognized as India’s most trusted and preferred partner for specialty additive chemicals —
+            bridging global innovation with Indian manufacturing excellence.
+            We aim to continuously enhance our product portfolio, service standards, and ethics to support the growth,
+            sustainability, and competitiveness of India’s decorative surface industry.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="max-w-7xl mx-auto mt-16 px-6 lg:px-12">
+      <h3 class="text-3xl font-bold text-center text-black-900 mb-10">Our Core Values</h3>
+
+      <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <!-- Value 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
+          <h4 class="font-semibold text-lg mb-2 text-blue-800">Integrity & Transparency</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Every partnership is built on honesty, fairness, and accountability. We believe in ethical and transparent
+            business practices.
+          </p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
+          <h4 class="font-semibold text-lg mb-2 text-blue-800">Quality Excellence</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Delivering premium additives that meet and exceed industry standards, ensuring superior durability and
+            performance.
+          </p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
+          <h4 class="font-semibold text-lg mb-2 text-blue-800">Customer-Centric Approach</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Our customers are at the heart of our operations — we focus on their goals, providing tailored and reliable
+            chemical solutions.
+          </p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
+          <h4 class="font-semibold text-lg mb-2 text-blue-800">Reliability & Consistency</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We ensure uninterrupted and timely supplies with efficient logistics and dependable sourcing partners.
+          </p>
+        </div>
+
+        <!-- Value 5 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
+          <h4 class="font-semibold text-lg mb-2 text-blue-800">Innovation & Improvement</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We explore global technologies to enhance product quality, efficiency, and sustainability across the
+            laminate industry.
+          </p>
+        </div>
+
+        <!-- Value 6 -->
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
+          <h4 class="font-semibold text-lg mb-2 text-blue-800">Sustainability & Responsibility</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Promoting eco-friendly and responsible sourcing practices, contributing to a safer and sustainable future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION (SCREENSHOT STYLE) -->
+  <section id="products" class="py-20 bg-[#A7D8DE]">
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-4">Our Products</h2>
+      <p class="text-center max-w-2xl mx-auto text-gray-700 mb-12">
+        Explore our complete range of high-performance additives engineered for laminates, resins, coatings and surface
+        finishing applications.
+      </p>
+
+      <!-- GRID -->
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+
+        <!-- 1 — Release Agents -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t3.ftcdn.net/jpg/03/92/76/08/240_F_392760833_yVVpSJdUtkXiJcoPOZa2ZW4eTgqN7hyw.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">Industrial Release Agents</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Ensures smooth sheet separation and flawless laminate release.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 2 — Wetting Agents -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t4.ftcdn.net/jpg/02/45/09/75/240_F_245097598_AuYDTpLJ06cYl189O6jwCmL5iKiSNCXN.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">Advanced Wetting Agents</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Improves surface wetting for cleaner, defect-free coating.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 — Gloss Enhancer -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t3.ftcdn.net/jpg/05/48/47/94/240_F_548479447_McS97KnYoRMQuy06Uv0dshil4IYONRyL.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">High-Gloss Surface Enhancers</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Boosts deeper shine, brightness and gloss clarity.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 — Anti-Blocking -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t4.ftcdn.net/jpg/05/84/40/59/240_F_584405909_ZruGSRsG72mXhIQ4IOE4r6MvEK8wVKR4.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">Anti-Blocking Additive</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Prevents sticking between layers for smoother processing.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 5 — Defoamer -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t3.ftcdn.net/jpg/08/25/69/30/240_F_825693035_ovsyYVwI9Ux0OgXTwtC9CzIKs3U72oq6.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">Defoamers & Air-Release</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Eliminates foam formation and ensures smooth coating flow.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 6 — Plate Cleaning Agent -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t4.ftcdn.net/jpg/02/40/01/85/240_F_240018513_OnTdAZFkdOx2Y2HVfiyiRofDk8AtCkKR.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">Plate Cleaning Chemicals</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Removes ink, resin & contamination for clean production cycles.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 7 — MF Hardener -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t3.ftcdn.net/jpg/00/88/07/64/240_F_88076465_EJfwW7rBkpzrnFGiiZlun8ymp7X8BUdF.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">MF Resin Hardener</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Enhances curing, hardness, and chemical resistance in MF resins.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+        <!-- 8 — UF Hardener -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+          <img src="https://t3.ftcdn.net/jpg/09/27/31/28/240_F_927312805_kFjSK6HU7hyYzeDcSx0kEkvzoa8L7Dxx.jpg"
+            class="w-full h-40 object-cover rounded-xl mb-4">
+          <h3 class="text-xl font-semibold text-center">UF Resin Hardener</h3>
+          <p class="text-center text-gray-600 mt-2">
+            Strengthens curing and bonding in urea-formaldehyde systems.
+          </p>
+          <div class="mt-4 flex justify-center">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section id="industries" class="py-24 bg-white text-gray-800">
+    <div class="w-[80%] mx-auto text-center">
+
+      <!-- Heading -->
+      <h2 class="text-4xl font-bold mb-4">Industries We Serve</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto mb-14 leading-relaxed">
+        Phoenix Additives Chemicals delivers specialized additive solutions for a wide range of industries.
+        Each formulation is designed to enhance surface finish, durability, strength, and performance—meeting
+        the demands of modern manufacturing.
+      </p>
+
+      <!-- Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- CARD 1 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/889/889488.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Laminate & Pre-Laminate</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            High-performance additives ensuring premium finish, smooth surfaces, and long-term durability
+            in decorative laminates and MDF boards.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Construction</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Additives that enhance adhesion, flexibility, and chemical resistance for construction
+            coatings, sealants, and adhesives.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/741/741407.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Automotive</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Surface modifiers, UV-protection additives, and coating enhancers improving shine, protection,
+            and corrosion resistance.
+          </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/986/986641.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Paints & Coatings</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Wetting agents, defoamers, gloss boosters, and flow modifiers for smooth application
+            and high-gloss finishes.
+          </p>
+        </div>
+
+        <!-- CARD 5 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/1829/1829710.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Decorative Surface Industry</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Chemical solutions for HPL, pre-laminate boards, and surface finishing in interior and
+            furniture applications.
+          </p>
+        </div>
+
+        <!-- CARD 6 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/3176/3176144.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Textile</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Additives enhancing dyeing quality, brightness, softness, and fabric durability during
+            finishing processes.
+          </p>
+        </div>
+
+        <!-- CARD 7 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/5961/5961431.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Chemical Manufacturing</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Reliable raw materials and additive solutions that improve stability, consistency,
+            and performance of chemical formulations.
+          </p>
+        </div>
+
+        <!-- CARD 8 -->
+        <div
+          class="rounded-2xl p-8 bg-white shadow-md hover:shadow-xl border border-gray-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 mx-auto mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" class="w-full">
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Packaging</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Enhancing barrier strength, flexibility, and print quality across commercial and
+            industrial packaging applications.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Blogs -->
+<section id="blog" class="bg-[#A7D8DE]/20 py-20" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Knowledge & Insights</h2>
+    <p class="text-gray-700 mb-10">Stay updated with the latest trends, innovations, and expert guidance in the world of specialty additive chemicals.</p>
+
+    <div class="grid md:grid-cols-3 gap-16">
+      <!-- Blog 1 -->
+      <div class="glass rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <img src="https://media.istockphoto.com/id/842971360/photo/working-on-new-lab-experiment.jpg?s=612x612&w=0&k=20&c=UKbVbyFGz2HypM1voPOMsxlJQFWaie-jH2mEXp6Uhgg=" 
+             alt="Understanding Additives" class="w-full h-48 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="font-semibold text-lg mb-2 text-[#1A4C50]">Understanding Additives</h3>
+          <p class="text-gray-700 mb-4">Explore how additives improve laminate quality, increase performance, and enhance durability across multiple applications.</p>
+          <a href="#" class="text-[#1A4C50] font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="glass rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <img src="https://media.istockphoto.com/id/1069840882/photo/factory-worker-working-with-dangerous-materials.jpg?s=612x612&w=0&k=20&c=vgSE-TzlelmY1Pvp5hfATGKkZv7jZprOdwzL5o1FhoY=" 
+             alt="Chemical Safety" class="w-full h-48 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="font-semibold text-lg mb-2 text-[#1A4C50]">Chemical Safety & Compliance</h3>
+          <p class="text-gray-700 mb-4">Learn best practices for handling, storing, and transporting specialty chemicals safely while meeting global standards.</p>
+          <a href="#" class="text-[#1A4C50] font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="glass rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <img src="https://www.hawkins.biz/wp-content/uploads/2024/08/Picture3.jpg" 
+             alt="Process Boosters" class="w-full h-48 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="font-semibold text-lg mb-2 text-[#1A4C50]">Process Boosters in Laminates</h3>
+          <p class="text-gray-700 mb-4">Discover innovative additive solutions that streamline manufacturing, enhance efficiency, and reduce operational costs.</p>
+          <a href="#" class="text-[#1A4C50] font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- RFQ Form -->
+  <section id="rfq" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Request a Quote</h2>
+      <form class="glass p-6 rounded-xl shadow-md space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full p-3 rounded border" required>
+        <input type="email" placeholder="Email Address" class="w-full p-3 rounded border" required>
+        <input type="text" placeholder="Company Name" class="w-full p-3 rounded border">
+        <textarea placeholder="Product Interest & Quantity" class="w-full p-3 rounded border"></textarea>
+        <button type="submit" class="btn w-full">Submit Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="text-gray-800 body-font bg-[#A7D8DE]/20 py-20" data-aos="fade-up">
+    <div class="container px-5 mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Our Clients & Testimonials</h2>
+        <p class="max-w-2xl mx-auto text-gray-700">
+          We take pride in the trust our clients place in us. Here’s what they have to say about our products and
+          services.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="glass h-full text-center p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-6 object-cover object-center rounded-full inline-block border-4 border-[#A7D8DE]"
+              src="data:image/png;base64,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">
+            <p class="leading-relaxed text-gray-700 italic">
+              “Phoenix Additives consistently delivers quality materials on time. Their customer service and technical
+              support are exceptional.”
+            </p>
+            <span class="inline-block h-1 w-10 rounded bg-[#2B6E75] mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-semibold text-base tracking-wide">HOLDEN CAULFIELD</h2>
+            <p class="text-gray-600 text-sm">Senior Product Designer</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="glass h-full text-center p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-6 object-cover object-center rounded-full inline-block border-4 border-[#A7D8DE]"
+              src="data:image/png;base64,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">
+            <p class="leading-relaxed text-gray-700 italic">
+              “Their innovative additives have improved our product finish and reduced production downtime
+              significantly.”
+            </p>
+            <span class="inline-block h-1 w-10 rounded bg-[#2B6E75] mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-semibold text-base tracking-wide">ALPER KAMU</h2>
+            <p class="text-gray-600 text-sm">UI Developer</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="glass h-full text-center p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-6 object-cover object-center rounded-full inline-block border-4 border-[#A7D8DE]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAABAlBMVEXL4v////++2Pv/3c5KgKo2Xn3/y75AcJMrTWb0+//igIbk9v/dY27X7v/I4P/U6/9Ga4okSGFVd5RLaIDd4fDR5f+41Pvp+//p8v/v9v/ie4H33tYuWHjZ6f/f7f7/08T4z8kAPV3/5dQ+eaTgcXlznMLh6fDp9PbcWmY6ZYbipq1sjq+ivNkNT3XMvLi7sLKZmKGGi5lwf5Dq3+PAydeSprbU3uWGnK640e357emUttldjbXjtLvI3erjl53l09p1kqnfwcm0fYuTboFWY34ZXYbDeINvZX0AME1fdYp1doGLg4pla3jPrqnmv7XkzsRBWW2umZqlusqEpsSAaH68WmsOUoLNAAAKuUlEQVR4nL3ce1/aSBcA4IGCIYogaIxghCorGgHbKiDV2mK3l9fd7baL7vf/Ku9MrjOZM7eQ9fyza34anp45cyaECai0VtidzsGRgxrlMBoN5PR6Bx17vbOi/H/a6RFOGGUq9vexDh11XhplH/QIBzHByAKbc5AvZTlQNh6wLChiZVzl/TLq5ciYKco+EIAE+cKwRs80X2YoG+dIJhLlyzFLlwnqQENUSLr0UfokkFVu9ApHmZHgbJV1WXqojjEJZjX0aksHZR/lIZHgxnAf6bA0ULhP5jRBpaUzhkpUvpGTJUs9hipUby0RzCofrYWy10yTQKWqLCmqU4CIBFBZB3lRvSLSJFLJhlCCyt0ItFT7jnjdEaMKKac0+Fw1jFHFlLhcVRaVuwilNjlOc1scTUdHJRhBGKWedg5a3C7bO2DUarXqcqGlgnMFomx1lsbtqud5VTBatVqr1Vo2c+cKQtn8PzJjGlcFniBqQbQe+dMArQHKFYRS1JPTXMpIMarWGmuNoB5KZWq05aYEVQMyDnQGfgR5lKpnNlWmGFU7BoodGEBHjVKtLY5i7ChUa8zXOtTbuRUni+qoTGOlKUXNAJTO6pxBKZtBU0lKUbXqotnku6i6MWRQ6mYwMUC1frWXNwuOxaOQDKW8WGm0TTIVNNH/jbL1riwrBqVcXZyFholGBbBqQ6lieyiDUg0ecm7VZc6haq129jxAtxKh1Feaql4Oo/jeDgxgD0YpZx5C26N8KG5xlg8ghdK4/N1WdnMY1d7Onkk6A9P/VbVNEuolBkbtcl0UGMADAKWscg4luqAKW4EcJa31BHWgc01Oo7zJ47ur6oR3ea3j2h9//nXckqJktY5MEkWjvMefr3BcvnvcJSlLorr7+OePjY2N/t9/tWQo2aUVMkkUhfIeD08I6uTk5Oflm7fvrq52d6+u3r19c/nzVX+DRH8jUYEoSaqQSaJo1GVgiuLkhP7vRhj9H1KUpKqQSaJSlLdLmzKxEat+tWQo8b0rZJIoCnWlg/pDihKnKkTZmm+Hi0UBVdWhUEd6poJRQKqcFKWx6r0QKrwGRQZlTqPe6qD+OZajRF0BGZQ5hZpcik0JauNvRaZEyzIyKPME5U3eSBKVojb+CZdAA9S+HaG0Rw81dyYkdt9ISDSq/+PXMYmqACVoVchg7uH4SSJp4ErURj9ccl6LzgePHzKYezgOpRoeFYUBisw/ZDJ6xaPgaz1kdme6aBTcPzFKn/QiqHKAMrkNXDgKGD+C0nnD8KKoDkYZfdjxAqjyEUYZdKn/AAVWOtJf+Ejs5UPtmaAaJWTSOnFc50F9kpwQmH42MqpzHEd7yiHMDN0nSZ7guwrGKIQclYpFKWoWmn7IZJHJg3qtqFnoQg/l+PjTDKU6Gz98uVCqYmdQh+YoBxm1qTBUfUF75glRRm0qDMcEpTw/0KjyoJDc1GdQypNBqDwhHz8GdZ0DVc6Fko+f7gJTMEo6/5hEKcu8QJQsVQxKo2ILQ8lSZVZRRaLEXZ1O1GudM0GoPC1BpjIcvOL6FAlBW6ATpZ55MArlWWZkKmMTuMzk3yQFqcxNBaOACyuqxrXLgkf1clzkUZHpDGlBaTRNIQpf5JlfDlOxB5v6r3THTnA5XBwqJb1aC4XfOBi+xRKiog9k+v3gJ30Ub8JvsczejIpRbKyDapi+bX8JlGN6g6NwlOAGxzqV/l+ggltBRjfNXgJlfHuRieZiKkJNF4I759kAJp/xjdg0HGcx8ofvYdP7oT9aOBrzGt54ZnjLOiE1F0/Vycy2QdV7255NqiN+k5IGKrplrdxByZNwlsiehHkJVGFTaU62LaizBYyebfwxSEAiWSIfHO3YJLhLhcPg8A75YKm6VGSLNyHjD4xQmiX8kjclUBUcLN2EvyPPluQDI/2P1pCzvRjFu2EnqxBlAya7tJrEe09Gi20RizclH61pL38kS+k+ksnQtnnV++jYMNm8502E2YJHz+DjWqeJxqcWtbXFS1A2b7KH9G9ap2OnycOkH9eqdzCTnd53g0HFpzba7JwlqGQKHiaHznaoX/Urg8Hd7QJlXPDc09oC4DjNxu0pPm2lUrGof347RcWq1GSf0buaLPyn+O9Pb8tMvngTtQVAUuqO0whzFIUPoyKVDaP8+K+DfDVil2KzhKjUcWU/3VUSEZMqFhWoSgKURZ1gULl7iuqeTxSzrQQudQfROYpChMLtivmRRmVOQfKFHPUGHChVzuIuK6JTlUWVDlnUjgclKnbdjR1hoiSbupxbgERXlc+iNs8f6B+HfEWxrFtBP6BQXKqcU9hEpWpIGa675/XzDzRqIklUcJ47TlXKojKpcp4EphQ1mVOm8/N6vX5+kR6ZK1ADyz8VJEq0pbIpGDt6+CarRPBQJyas2kwOrRIUPHyWZflPYEWJNp86C6FpkE6/GzcCXIQkoupeh4fcWTr5oHMNLKLa53sUi2K26Z6KTGlLwNPP3YpKvJ7EeT0o/y2XbuhwonCMKBS4TZfaje4shCZm8XO3tjod94xBXbj42NaWyy59sMmyxikK3tCcvoNoimYeY6pW77EKx7CbmjbPgkPuPfOLnCpG3cUdVLT1O611R2QaMC/lRSj3Oq2pYXRoym7fFZgsn6/yLKqjKvMMahUKttyHSHX+EB9ZsagBbLL8W37w4AcvnFuBiS5zglpuxXHxWxAXbnxgKctUirLCriB78CIeQPHcs5iX2okJ7ofuJo7uhwTFFh/bPylTNP8yTz6BD/OIUez4Te5jw8cQ9TH++Z59vIYZvQGPkj/ME5aVGMVOP28WZWa4GcUwytyMGT128lkcSvHYU1hWEhRTVaR9BoZP3dDU/RQdYB87EJsISv2AWNDYZSi2qsKm4F7EqLDSM12KqSiLQ2k8SkceOpSh2FSFTcHdTMIFGoLEhFFaDx1ilRRF17q3JAh32I1N3aB5ukxDYC7xORT0iDSE6ghXmSCYWg97Z4oKu6eoyjmTNYIerwUf+R1WdFWTqUuVVFRU7nSia7KG0OvDD0fvyUz0AIbj9zFFfcyOHvXPA0xz8OUFj5HLc0XNQH9IrhLSQu+Sn6lUUjOPJ7XP4FcXPds+hN5eAQOI51/SpaJORc89avAAE5wnyVcT2CMtFe6fVEkFRUV1TpnJB2tcjirZwvczFeZK/Z7qUkGnuoeuzjnT15s8X+JQKo11VJPZdZc2da/TdU9i8leSF5Z+Mci9pNyTYm8/sKiH5FnXpMgHnMm6l72u/CtUZG00UX1mUZ85Ez90S7A9aaKkQxgVu/fM1tSzx5qANMmGTgdVmot7QzwFWVRm4vFpGok6gT6qVFoJKytUeb/TLeF3T25SpkkPVRoKm0Oo+kIn6gtt4oZOVU36KDwNRWMYqj6nps9eauKrqT3VejnNrw+zp4IxDFRf0gX5S2Lis9Sean7ZmvYXrdkrOFtE5X2LUd+8yJQ7S0Yokq0Rd1s2Un2PUd9D0xpZMkThmD/xt4sDVZSqb8Q0yJL89o2yC6yBwjMRSJdf9aJUfcejlxV9ba90Ztw6KOJanWby5YdV1d3MmPyv1tJYlA9FXNPZYEDBfO+52/2tjlcYCvTVmk1ziHKjSNj346fTu8ogCL/6b73+b9XHGBxWe7ScmVR2YagANpzPV7ObZdvyn+v1Z59gVtP5fLje97H+HwmxjNGwulIIAAAAAElFTkSuQmCC">
+            <p class="leading-relaxed text-gray-700 italic">
+              “We’ve partnered with Phoenix Additives for years — they maintain consistent quality, transparency, and
+              fast delivery.”
+            </p>
+            <span class="inline-block h-1 w-10 rounded bg-[#2B6E75] mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-semibold text-base tracking-wide">HENRY LETHAM</h2>
+            <p class="text-gray-600 text-sm">CTO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="bg-[#A7D8DE]/20 py-20" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-6 text-gray-700">Feel free to get in touch with us by filling out the form below. We’ll respond as
+        soon as possible.</p>
+
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <!-- Contact Form -->
+        <form class="glass p-6 rounded-xl shadow-md space-y-4">
+          <input type="text" placeholder="Name"
+            class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B6E75]">
+          <input type="email" placeholder="Email"
+            class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B6E75]">
+          <textarea placeholder="Your Message" rows="4"
+            class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B6E75]"></textarea>
+          <button type="submit"
+            class="w-full bg-[#2B6E75] hover:bg-[#24595F] text-white font-semibold py-3 rounded transition-all duration-300">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Google Map -->
+        <div class="glass p-4 rounded-xl shadow-md h-[400px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.940221540434!2d72.87765507481982!3d19.072786382118013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c864aa84c0cd%3A0x1234567890abcdef!2sPhoenix%20Additives%20Chemicals!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer-Sections -->
+<footer class="bg-black text-white pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-12 text-center md:text-left">
+
+    <!-- COLUMN 1: LOGO + BRAND INFO -->
+    <div class="flex flex-col items-center md:items-start">
+      <img src="./assets/pheonix-logo.png" alt="Phoenix Logo" class="w-20 h-20 mb-4">
+      <p class="text-gray-300 text-sm leading-relaxed max-w-xs">
+        Phoenix Additives is a trusted Indian chemical brand providing 
+        high-performance additive solutions for various industries.
+      </p>
+
+      <div class="flex gap-4 mt-4 text-xl justify-center md:justify-start">
+        <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- COLUMN 2: QUICK LINKS -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="#home" class="hover:text-[#A7D8DE]">Home</a></li>
+        <li><a href="#about" class="hover:text-[#A7D8DE]">About Us</a></li>
+        <li><a href="#products" class="hover:text-[#A7D8DE]">Products</a></li>
+        <li><a href="#industries" class="hover:text-[#A7D8DE]">Industries</a></li>
+        <li><a href="#contact" class="hover:text-[#A7D8DE]">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 3: PRODUCT LINKS -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Our Products</h3>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="#" class="hover:text-[#A7D8DE]">Release Agent</a></li>
+        <li><a href="#" class="hover:text-[#A7D8DE]">Wetting Agent</a></li>
+        <li><a href="#" class="hover:text-[#A7D8DE]">Gloss Enhancer</a></li>
+        <li><a href="#" class="hover:text-[#A7D8DE]">Defoamer</a></li>
+        <li><a href="#" class="hover:text-[#A7D8DE]">Anti Blocking</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 4: HEAD OFFICE -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Head Office</h3>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        Unit No.12, Borivali Ganjawala CHS. LTD.<br>
+        S.V. Road, Borivali (W),<br>
+        Mumbai – 400092
+      </p>
+
+      <p class="text-gray-300 text-sm mt-3"><strong>📞 Phone:</strong> +91 98694 76258</p>
+      <p class="text-gray-300 text-sm"><strong>✉️ Email:</strong> pacindia@hotmail.com</p>
+    </div>
+
+    <!-- COLUMN 5: FACTORY ADDRESS + SUBSCRIBE -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Factory Address</h3>
+      <p class="text-gray-300 text-sm leading-relaxed mb-4">
+        Shree Ganesh Warehouse,<br>
+        Godown No. 556, Bhoir Compound,<br>
+        Near Padmavati Hotel,<br>
+        Village – VAL, Bhiwandi – 421302
+      </p>
+
+      <form class="mt-4">
+        <input type="email" placeholder="Your Email"
+               class="w-full p-2 rounded-md text-black mb-2" required>
+        <button type="submit"
+          class="w-full bg-[#A7D8DE] text-black py-2 rounded-md font-semibold hover:bg-[#8ecfd6] transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="border-t border-gray-800 mt-10 pt-4 text-center text-gray-400 text-sm">
+    <p>© 2025 Phoenix Additives. All Rights Reserved.</p>
+    <p>Designed & Developed by 
+      <span class="text-[#A7D8DE] font-semibold">Thundergits Technology</span>
+    </p>
+  </div>
+</footer>
+
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <script src="scrpit.js"></script>
+
+</body>
+
+</html>

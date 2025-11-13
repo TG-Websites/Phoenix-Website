@@ -1,0 +1,32 @@
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .btn {
+      background-color: #A7D8DE;
+      color: #000;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #8ecfd6;
+      transform: scale(1.05);
+    }
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 80px 20px;
+    }
+  

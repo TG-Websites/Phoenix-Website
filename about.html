@@ -21,17 +21,19 @@
       <nav class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8 text-black font-medium">
         <a href="./index.html" class="nav-link hover:text-[#0A3A45]">Home</a>
         <a href="./about.html" class="nav-link hover:text-[#0A3A45]">About</a>
-        <a href="./product.html" class="nav-link hover:text-[#0A3A45]">Products</a>
+        <a href="./index.html#products" class="hover:text-[#0A3A45]">Products</a>
+
         <a href="./blog.html" class="nav-link hover:text-[#0A3A45]">Blog</a>
         <a href="./Contact.html" class="nav-link hover:text-[#0A3A45]">Contact</a>
       </nav>
 
       <!-- CTA Desktop -->
+       <a href="Contact.html">
       <button
         class="hidden md:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
         Enquire Now
       </button>
-
+</a>
       <!-- Mobile Hamburger -->
       <button id="menuToggle" class="md:hidden text-black text-3xl">
         ☰
@@ -44,14 +46,14 @@
 
       <a href="./index.html" class="mobile-link block text-black font-medium">Home</a>
       <a href="./about.html" class="mobile-link block text-black font-medium">About</a>
-      <a href="./product.html" class="mobile-link block text-black font-medium">Products</a>
+      <a href="./index.html#products" class="mobile-link block text-black font-medium">Products</a>
       <a href="./blog.html" class="mobile-link block text-black font-medium">Blog</a>
       <a href="./Contact.html" class="mobile-link block text-black font-medium">Contact</a>
-
+<a href="Contact.html">
       <button class="w-full px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
         Enquire Now
       </button>
-
+</a>
     </div>
   </header>
   
@@ -242,12 +244,13 @@
       <h2 class="text-3xl font-semibold text-center mb-10 text-[#0A3A45]">Infrastructure & Quality Assurance</h2>
 
       <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-[#F5FAFB] p-6 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2 text-[#0A3A45]">Modern Production Facility</h3>
-          <p class="leading-7 text-gray-700">
-            Well-equipped plant ensuring consistent batch quality and high production capacity.
-          </p>
-        </div>
+       <div class="bg-[#F5FAFB] p-6 rounded-xl shadow">
+  <h3 class="font-semibold text-lg mb-2 text-[#0A3A45]">Reliable Import & Container Handling</h3>
+  <p class="leading-7 text-gray-700">
+    Safe unloading, inspection, and palletized handling of imported chemical drums with full compliance and documentation support.
+  </p>
+</div>
+
 
         <div class="bg-[#F5FAFB] p-6 rounded-xl shadow">
           <h3 class="font-semibold text-lg mb-2 text-[#0A3A45]">Lab Testing & QA/QC</h3>
@@ -263,22 +266,65 @@
           </p>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- CLIENT LOGOS (LIGHT BLUE ALT) -->
-  <section class="py-16 bg-[#E7F4F7]">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-center mb-10 text-[#0A3A45]">Our Clients</h2>
+  <!-- CLIENT LOGOS - AUTO SCROLL -->
+<section class="py-16 bg-[#E7F4F7]">
+  <div class="max-w-7xl mx-auto px-6">
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
-        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
-        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
-        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
-        <div class="bg-white p-6 rounded-lg shadow text-center text-gray-600 text-sm">Client Logo</div>
+    <h2 class="text-3xl font-semibold text-center mb-10 text-[#0A3A45]">
+      Our Clients
+    </h2>
+
+    <!-- Slider Wrapper -->
+    <div class="overflow-hidden relative">
+
+      <!-- Sliding Track -->
+      <div class="flex items-center gap-10 animate-scroll">
+        
+        <!-- 10 SAMPLE CLIENT LOGOS (Replace with real logos) -->
+        <img src="./assets/Picture1.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture2.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture3.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture4.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture5.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture7.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture8.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture10.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture11.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/Picture12.png" class="h-16 w-auto object-contain" />
+
+        <!-- Duplicate set for seamless infinite scroll -->
+        <img src="./assets/client1.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client2.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client3.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client4.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client5.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client6.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client7.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client8.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client9.png" class="h-16 w-auto object-contain" />
+        <img src="./assets/client10.png" class="h-16 w-auto object-contain" />
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- SCROLL ANIMATION -->
+<style>
+  @keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-scroll {
+    width: max-content;
+    animation: scroll 25s linear infinite; /* adjust speed */
+  }
+</style>
+
 
   <!-- CTA SECTION (DARK TEAL) -->
   <section class="bg-[#0A3A45] text-white py-12 text-center">
@@ -303,22 +349,19 @@
           high-performance additive solutions for various industries.
         </p>
 
-        <div class="flex gap-4 mt-4 text-xl justify-center md:justify-start">
-          <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="hover:text-[#A7D8DE]"><i class="fab fa-whatsapp"></i></a>
-        </div>
+        
       </div>
 
       <!-- COLUMN 2: QUICK LINKS -->
       <div>
         <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Quick Links</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="./index.html" class="hover:text-[#A7D8DE]">Home</a></li>
+          <li><a href="#home" class="hover:text-[#A7D8DE]">Home</a></li>
           <li><a href="./about.html" class="hover:text-[#A7D8DE]">About Us</a></li>
-          <li><a href="./product.html" class="hover:text-[#A7D8DE]">Products</a></li>
-          
+          <li><a href="./index.html#products" class="hover:text-[#A7D8DE]">Products</a></li>
+
           <li><a href="./Contact.html" class="hover:text-[#A7D8DE]">Contact</a></li>
+          <li><a href="./Privacy.html" class="hover:text-[#A7D8DE]">Privacy And Policy</a></li>
         </ul>
       </div>
 
@@ -326,11 +369,11 @@
       <div>
         <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Our Products</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="#" class="hover:text-[#A7D8DE]">Release Agent</a></li>
-          <li><a href="#" class="hover:text-[#A7D8DE]">Wetting Agent</a></li>
-          <li><a href="#" class="hover:text-[#A7D8DE]">Gloss Enhancer</a></li>
-          <li><a href="#" class="hover:text-[#A7D8DE]">Defoamer</a></li>
-          <li><a href="#" class="hover:text-[#A7D8DE]">Anti Blocking</a></li>
+          <li><a href="./release.html" class="hover:text-[#A7D8DE]">Release Agent</a></li>
+          <li><a href="./wetting-Agent.html" class="hover:text-[#A7D8DE]">Wetting Agent</a></li>
+          <li><a href="./high-glis.html" class="hover:text-[#A7D8DE]">Gloss Enhancer</a></li>
+          <li><a href="./Product5.html" class="hover:text-[#A7D8DE]">Defoamer</a></li>
+          <li><a href="antiBlocking.html" class="hover:text-[#A7D8DE]">Anti Blocking</a></li>
         </ul>
       </div>
 
@@ -342,9 +385,14 @@
           S.V. Road, Borivali (W),<br>
           Mumbai – 400092
         </p>
+        <p class="text-gray-300 text-sm mt-3">
+          <strong>📞:</strong> +91 98694 76258
+        </p>
 
-        <p class="text-gray-300 text-sm mt-3"><strong>📞 Phone:</strong> +91 98694 76258</p>
-        <p class="text-gray-300 text-sm"><strong>✉️ Email:</strong> pacindia@hotmail.com</p>
+        <p class="text-gray-300 text-sm whitespace-nowrap">
+          <strong>✉️:</strong> pacindia@hotmail.com
+        </p>
+
       </div>
 
       <!-- COLUMN 5: FACTORY ADDRESS + SUBSCRIBE -->
@@ -357,13 +405,7 @@
           Village – VAL, Bhiwandi – 421302
         </p>
 
-        <form class="mt-4">
-          <input type="email" placeholder="Your Email" class="w-full p-2 rounded-md text-black mb-2" required>
-          <button type="submit"
-            class="w-full bg-[#A7D8DE] text-black py-2 rounded-md font-semibold hover:bg-[#8ecfd6] transition">
-            Subscribe
-          </button>
-        </form>
+     
       </div>
 
     </div>

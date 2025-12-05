@@ -7,8 +7,8 @@
   <title>Phoenix Additives | Chemicals & Additives</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="Main.css">
- <link href="https://api.fontshare.com/v2/css?f[]=clash-display:wght@400,500,600&display=swap" rel="stylesheet">
-
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display:wght@400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
@@ -21,7 +21,13 @@
     <div class="container mx-auto flex justify-between items-center p-4">
 
       <!-- Logo -->
-      <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
+      <div class="flex items-center gap-3">
+        <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
+        <h1 class=" tracking-wide">
+          Phoenix<br> Additives Chemicals
+        </h1>
+      </div>
+
 
       <!-- Desktop Menu -->
       <nav class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8 text-black font-medium">
@@ -91,8 +97,6 @@
   </script>
 
 
-
-
   <!--Hero  -->
   <div class="relative w-full overflow-hidden select-none" id="carousel">
 
@@ -107,7 +111,7 @@
 
         <div class="absolute bottom-12 left-6 sm:left-16 lg:left-24 max-w-xl">
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-snug">
-            Industrial Chemical Solutions for Every Sector
+            Industrial Chemical Solutions for Specefic Sector
           </h1>
           <p class="text-gray-200 mt-3 text-sm sm:text-base">
             Premium-quality chemicals engineered for precision, safety, and performance.
@@ -151,7 +155,7 @@
 
       <!-- Slide 3 - Transport Focused Hero -->
       <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
-        <img src="./assets/transportPic.png" class="absolute inset-0 w-full h-full object-cover" />
+        <img src="./assets/Transport-01.png" class="absolute inset-0 w-full h-full object-cover" />
 
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
@@ -272,6 +276,11 @@
 
 
 
+
+
+
+
+
   <!-- About Us -->
   <section id="about" class="relative bg-gray-50 py-16" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-10">
@@ -285,28 +294,44 @@
 
       <!-- Right Side: Text Content -->
       <div class="w-full lg:w-1/2">
-        <h2 class="text-3xl sm:text-4xl font-bold text-black-900 mb-5 border-l-4 border-#A7D8DE pl-3">
+        <h2 class="text-3xl sm:text-4xl font-bold text-black-900 mb-5 border-l-4 border-[#A7D8DE] pl-3">
           About Us
         </h2>
 
         <p class="text-gray-700 leading-relaxed mb-6 text-justify">
-          <strong>Phoenix Additives Chemicals</strong>, established in 2017, is one of India’s leading suppliers and
-          importers of specialty additive chemicals,
-          catering exclusively to the Laminate and Pre-Laminate industry. We specialize in providing high-quality
-          additives used in decorative low-pressure
-          pre-laminated MDF, particle boards, and high-pressure laminates — ensuring superior finish, durability, and
-          performance.
+          <strong>Phoenix Additives Chemicals</strong> is driven by a singular vision — to expand globally while
+          strengthening our footprint across India.
+          Since inception, we have been actively involved in the import and merchandise trade of highly specialized
+          additive chemicals used in the
+          production of Decorative High-Pressure Laminates, Pre-Laminated MDF, Particle Boards, and Plywood Industries.
+          Guided by our commitment to <span class="font-semibold bg-[#A7D8DE]/60 text-[#0A3A45] px-1.5 rounded">Fair
+            Trade Practices</span>,
+          we have consistently elevated our growth and expanded our business network nationwide.
         </p>
 
         <p class="text-gray-700 leading-relaxed mb-6 text-justify">
-          With a strong focus on the Indian market, we have become the first choice for major laminate and wood panel
-          manufacturers across the country.
-          Built on fairness, transparency, and customer-centric practices, Phoenix Additives Chemicals ensures
-          consistent quality, reliable imports, and
-          prompt service — delivering not just products, but complete solutions.
+          We import premium-grade chemicals from leading international markets including Spain, Germany, France, Turkey,
+          and more.
+          These materials are supplied to top manufacturers at both domestic and overseas levels, ensuring reliable
+          quality and consistent performance.
+          Alongside imports, Phoenix Additives Chemicals is actively engaged in Interim Trading and Domestic Trading,
+          sourcing and supplying
+          merchandise that meets the evolving needs of India’s laminate and wood panel industries.
         </p>
+
+        <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+          As a pioneer in Third-Country Trade, we specialize in global buying and selling operations that optimize
+          supply chains and
+          ensure uninterrupted access to high-quality materials. Moving ahead, our goal is to expand the horizon of our
+          business spectrum
+          with determination, professionalism, and a global mindset. We remain committed to serving high-quality-focused
+          industries with
+          excellence, transparency, and dependable service.
+        </p>
+
       </div>
     </div>
+
 
     <!-- Mission & Vision Section -->
     <div class="max-w-7xl mx-auto mt-16 px-6 lg:px-12 text-center">
@@ -343,15 +368,19 @@
       </div>
     </div>
 
-
     <!-- Core Values Section -->
     <div class="max-w-7xl mx-auto mt-16 px-6 lg:px-12">
       <h3 class="text-3xl font-bold text-center text-black-900 mb-10">Our Core Values</h3>
 
       <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+
         <!-- Value 1 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
-          <h4 class="font-semibold text-lg mb-2 text-blue-800">Integrity & Transparency</h4>
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4"
+          style="border-top-color:#A7D8DE;">
+          <h4 class="font-semibold text-lg mb-3 text-blue-800 flex items-center gap-3">
+            <img src="./assets/Integrity.png" class="w-10 h-10 object-contain" />
+            Integrity & Transparency
+          </h4>
           <p class="text-gray-700 text-sm leading-relaxed">
             Every partnership is built on honesty, fairness, and accountability. We believe in ethical and transparent
             business practices.
@@ -359,8 +388,12 @@
         </div>
 
         <!-- Value 2 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
-          <h4 class="font-semibold text-lg mb-2 text-blue-800">Quality Excellence</h4>
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4"
+          style="border-top-color:#A7D8DE;">
+          <h4 class="font-semibold text-lg mb-3 text-blue-800 flex items-center gap-3">
+            <img src="./assets/Quality Excellence.jpg" class="w-10 h-10 object-contain" />
+            Quality Excellence
+          </h4>
           <p class="text-gray-700 text-sm leading-relaxed">
             Delivering premium additives that meet and exceed industry standards, ensuring superior durability and
             performance.
@@ -368,25 +401,36 @@
         </div>
 
         <!-- Value 3 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
-          <h4 class="font-semibold text-lg mb-2 text-blue-800">Customer-Centric Approach</h4>
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4"
+          style="border-top-color:#A7D8DE;">
+          <h4 class="font-semibold text-lg mb-3 text-blue-800 flex items-center gap-3">
+            <img src="./assets/Customer-Centric.png" class="w-10 h-10 object-contain" />
+            Customer-Centric Approach
+          </h4>
           <p class="text-gray-700 text-sm leading-relaxed">
-            Our customers are at the heart of our operations — we focus on their goals, providing tailored and reliable
-            chemical solutions.
+            Our customers are at the heart of our operations — we provide tailored and reliable chemical solutions.
           </p>
         </div>
 
         <!-- Value 4 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
-          <h4 class="font-semibold text-lg mb-2 text-blue-800">Reliability & Consistency</h4>
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4"
+          style="border-top-color:#A7D8DE;">
+          <h4 class="font-semibold text-lg mb-3 text-blue-800 flex items-center gap-3">
+            <img src="./assets/Reliability & Consistency.png" class="w-10 h-10 object-contain" />
+            Reliability & Consistency
+          </h4>
           <p class="text-gray-700 text-sm leading-relaxed">
             We ensure uninterrupted and timely supplies with efficient logistics and dependable sourcing partners.
           </p>
         </div>
 
         <!-- Value 5 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
-          <h4 class="font-semibold text-lg mb-2 text-blue-800">Innovation & Improvement</h4>
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4"
+          style="border-top-color:#A7D8DE;">
+          <h4 class="font-semibold text-lg mb-3 text-blue-800 flex items-center gap-3">
+            <img src="./assets/Innovation.png" class="w-10 h-10 object-contain" />
+            Innovation & Improvement
+          </h4>
           <p class="text-gray-700 text-sm leading-relaxed">
             We explore global technologies to enhance product quality, efficiency, and sustainability across the
             laminate industry.
@@ -394,14 +438,22 @@
         </div>
 
         <!-- Value 6 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-#A7D8DE">
-          <h4 class="font-semibold text-lg mb-2 text-blue-800">Sustainability & Responsibility</h4>
+        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition border-t-4"
+          style="border-top-color:#A7D8DE;">
+          <h4 class="font-semibold text-lg mb-3 text-blue-800 flex items-center gap-3">
+            <img src="./assets/Sustainability.png" class="w-10 h-10 object-contain" />
+            Sustainability & Responsibility
+          </h4>
           <p class="text-gray-700 text-sm leading-relaxed">
             Promoting eco-friendly and responsible sourcing practices, contributing to a safer and sustainable future.
           </p>
         </div>
+
       </div>
     </div>
+
+
+
   </section>
 
   <!-- PRODUCTS SECTION -->
@@ -567,6 +619,217 @@
     </div>
   </section>
 
+  <!-- RELATED PRODUCTS SLIDER -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-semibold text-center text-[#0A3A45] mb-10">
+      Related Products
+    </h2>
+
+    <div class="relative">
+
+      <!-- LEFT ARROW -->
+      <button id="leftBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg w-12 h-12 flex items-center 
+             justify-center text-2xl rounded-full transition z-10 opacity-50 cursor-not-allowed">
+        &#10094;
+      </button>
+
+      <!-- RIGHT ARROW -->
+      <button id="rightBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg w-12 h-12 flex items-center 
+             justify-center text-2xl rounded-full transition z-10">
+        &#10095;
+      </button>
+
+      <!-- SLIDER WRAPPER -->
+      <div id="scrollBox" class="overflow-hidden">
+        <div id="productRow" class="flex gap-6 transition-all duration-500 items-center">
+
+          <!-- ⭐ ALL CARDS – SAME HEIGHT ⭐ -->
+
+          <!-- CARD TEMPLATE - repeated below -->
+          <!-- I am using your SAME images. -->
+
+          <!-- 1. DEG -->
+          <div class="product-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." class="product-img">
+            <h3 class="product-title">DI Ethylene Glycol (DEG)</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 2. MEG -->
+          <div class="product-card">
+            <img
+              src="https://brmchemicals.com/cdn/shop/products/5kgBluecaneredBRM_4925a8f8-eda5-4bbb-a693-830163b32851.jpg?v=1702971213&width=1946"
+              class="product-img">
+            <h3 class="product-title">Mono Ethylene Glycol (MEG)</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 3. PTSA -->
+          <div class="product-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." class="product-img">
+            <h3 class="product-title">Para Toluene Sulphonic Acid (PTSA)</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 4. Morpholine -->
+          <div class="product-card">
+            <img src="https://www.ibuychemikals.com/prdimg/full/Morpholine%20LR%20500ML.jpg" class="product-img">
+            <h3 class="product-title">Morpholine</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 5. Caprolactam -->
+          <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_NRpCLHfNS2rMvEWsQKsYom03YjJLVxuPQQ&s"
+              class="product-img">
+            <h3 class="product-title">Caprolactam</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 6. Caustic Soda -->
+          <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnGvGoci5N7PI8IbMhGRdEYG2Jxckq1o6-AQ&s"
+              class="product-img">
+            <h3 class="product-title">Caustic Soda</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 7. Hexamine -->
+          <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCoCyIA4z1-Wm9Rwyom5v6lj1vPCGbKNSjxg&s"
+              class="product-img">
+            <h3 class="product-title">Hexamine</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 8. PVA -->
+          <div class="product-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." class="product-img">
+            <h3 class="product-title">PVA (Polyvinyl Alcohol)</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 9. Formic Acid -->
+          <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHldzs8u70WRPFVFp98pokx9XVTcpUU5u_Kw&s"
+              class="product-img">
+            <h3 class="product-title">Formic Acid</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 10. Acetic Acid -->
+          <div class="product-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." class="product-img">
+            <h3 class="product-title">Acetic Acid</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 11. Oleic Acid -->
+          <div class="product-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." class="product-img">
+            <h3 class="product-title">Oleic Acid</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+          <!-- 12. Normal Butanol -->
+          <div class="product-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." class="product-img">
+            <h3 class="product-title">Normal Butanol</h3>
+            <a href="./Contact.html" class="product-btn">Enquiry Now</a>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PERFECT ALIGNMENT CSS -->
+  <style>
+    .product-card {
+      width: 250px;
+      height: 330px;
+      /* FIXED CARD HEIGHT */
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-img {
+      width: 100%;
+      height: 140px;
+      /* FIXED IMAGE HEIGHT */
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #0A3A45;
+    }
+
+    .product-btn {
+      padding: 8px 12px;
+      background: #A7D8DE;
+      border-radius: 6px;
+      font-weight: 600;
+      color: black;
+      display: inline-block;
+    }
+  </style>
+
+  <!-- SLIDER SCRIPT WITH BUTTON DISABLE -->
+  <script>
+    const row = document.getElementById("productRow");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    const cardWidth = 250 + 24;
+    const scrollStep = cardWidth * 4;
+
+    const totalCards = 12;
+    const maxScroll = -(scrollStep * ((totalCards / 4) - 1));
+
+    let current = 0;
+
+    function updateButtons() {
+      leftBtn.classList.toggle("opacity-50", current >= 0);
+      leftBtn.classList.toggle("cursor-not-allowed", current >= 0);
+
+      rightBtn.classList.toggle("opacity-50", current <= maxScroll);
+      rightBtn.classList.toggle("cursor-not-allowed", current <= maxScroll);
+    }
+
+    rightBtn.onclick = () => {
+      if (current > maxScroll) {
+        current -= scrollStep;
+        row.style.transform = `translateX(${current}px)`;
+        updateButtons();
+      }
+    };
+
+    leftBtn.onclick = () => {
+      if (current < 0) {
+        current += scrollStep;
+        row.style.transform = `translateX(${current}px)`;
+        updateButtons();
+      }
+    };
+
+    updateButtons();
+  </script>
+
+
 
 
   <!-- INDUSTRIES WE SERVE -->
@@ -613,6 +876,77 @@
       </div>
     </div>
   </section>
+
+  <!-- TRIAL PACKAGE SECTION -->
+<section class="py-16 bg-[#E7F4F7]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-[#0A3A45] text-center mb-3">
+      Trial Chemical Packages
+    </h2>
+
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Get started with our small-batch chemical trial packs designed for testing, sampling, and formulation evaluation.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- 25 KG Package -->
+      <div class="bg-white p-6 rounded-xl border border-[#A7D8DE] shadow-sm hover:shadow-md transition">
+        <div class="text-center">
+
+          <!-- Image -->
+          <img 
+            src="./assets/trail-chemical-package.png" 
+            alt="25 KG Package"
+            class="w-32 h-32 object-cover mx-auto mb-4 rounded-lg"
+          />
+
+          <h3 class="text-3xl font-bold text-[#0A3A45]">25 KG</h3>
+
+          <p class="text-gray-600 text-sm mt-2 mb-5">
+            Suitable for lab-scale trials, sample production, and initial performance testing.
+          </p>
+
+          <a 
+            href="#contact"
+            class="px-6 py-2 bg-[#0A3A45] text-white rounded-md text-sm font-medium hover:bg-[#145766] transition">
+            Enquire Now
+          </a>
+        </div>
+      </div>
+
+      <!-- 50 KG Package -->
+      <div class="bg-white p-6 rounded-xl border border-[#A7D8DE] shadow-sm hover:shadow-md transition">
+        <div class="text-center">
+
+          <!-- Image -->
+          <img 
+            src="./assets/trail-chemical-package.png"
+            alt="50 KG Package"
+            class="w-32 h-32 object-cover mx-auto mb-4 rounded-lg"
+          />
+
+          <h3 class="text-3xl font-bold text-[#0A3A45]">50 KG</h3>
+
+          <p class="text-gray-600 text-sm mt-2 mb-5">
+            Ideal for extended trials and pre-production testing before bulk procurement.
+          </p>
+
+          <a 
+            href="#contact"
+            class="px-6 py-2 bg-[#0A3A45] text-white rounded-md text-sm font-medium hover:bg-[#145766] transition">
+            Enquire Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
 
 
 
@@ -748,6 +1082,21 @@
       <h2 class="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
 
       <div class="space-y-4">
+
+        <!-- FAQ ITEM -->
+        <div class="bg-white rounded-xl shadow-md border">
+          <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+            <h3 class="font-semibold text-lg text-[#0A3A45]">Do you offer solid packaging sizes (25kg, 50kg, 100kg)?
+            </h3>
+            <span class="text-2xl text-[#0A3A45] font-bold">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-gray-700">
+            Yes, we offer solid additives in 25kg, 50kg, 100kg, and 210kg drum packaging. Bulk IBC tanks (1000kg) are
+            also
+            available for industrial-scale requirements.
+          </div>
+        </div>
+
 
         <!-- FAQ ITEM -->
         <div class="bg-white rounded-xl shadow-md border">
@@ -929,9 +1278,48 @@
     </div>
   </section>
 
+
+
+
+  <!-- TEAM MEMBERS SECTION -->
+  <div class="max-w-full mx-auto px-6 mt-16 bg-black py-10 ">
+    <h3 class="text-2xl font-semibold text-center mb-8 text-[#A7D8DE]">Our Team</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Team Member 1 -->
+      <div class="p-6 rounded-xl text-center border border-gray-700 bg-gray-900">
+        <h4 class="text-xl font-semibold text-white">V. K AGARWAL</h4>
+        <p class="text-gray-400 text-sm mt-1">(M.D.)</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="p-6 rounded-xl text-center border border-gray-700 bg-gray-900">
+        <h4 class="text-xl font-semibold text-white">Abhishek Yadav</h4>
+        <p class="text-gray-400 text-sm mt-1">(Sr. Marketing Executive)</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="p-6 rounded-xl text-center border border-gray-700 bg-gray-900">
+        <h4 class="text-xl font-semibold text-white">Saurabh Singh</h4>
+        <p class="text-gray-400 text-sm mt-1">(Marketing Executive)</p>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Footer-Sections -->
+
   <footer class="bg-black text-white pt-16 pb-10">
+
+
+
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-12 text-center md:text-left">
+
+
+
+
+
 
       <!-- COLUMN 1: LOGO + BRAND INFO -->
       <div class="flex flex-col items-center md:items-start">
@@ -940,8 +1328,6 @@
           Phoenix Additives is a trusted Indian chemical brand providing
           high-performance additive solutions for various industries.
         </p>
-
-        
       </div>
 
       <!-- COLUMN 2: QUICK LINKS -->
@@ -951,7 +1337,6 @@
           <li><a href="#home" class="hover:text-[#A7D8DE]">Home</a></li>
           <li><a href="./about.html" class="hover:text-[#A7D8DE]">About Us</a></li>
           <li><a href="./index.html#products" class="hover:text-[#A7D8DE]">Products</a></li>
-
           <li><a href="./Contact.html" class="hover:text-[#A7D8DE]">Contact</a></li>
           <li><a href="./Privacy.html" class="hover:text-[#A7D8DE]">Privacy And Policy</a></li>
         </ul>
@@ -980,36 +1365,35 @@
         <p class="text-gray-300 text-sm mt-3">
           <strong>📞:</strong> +91 98694 76258
         </p>
-
         <p class="text-gray-300 text-sm whitespace-nowrap">
           <strong>✉️:</strong> pacindia@hotmail.com
         </p>
-
       </div>
 
-      <!-- COLUMN 5: FACTORY ADDRESS + SUBSCRIBE -->
+      <!-- COLUMN 5: WAREHOUSE -->
       <div>
-        <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Factory Address</h3>
+        <h3 class="text-lg font-semibold text-[#A7D8DE] mb-4">Warehouse</h3>
         <p class="text-gray-300 text-sm leading-relaxed mb-4">
           Shree Ganesh Warehouse,<br>
           Godown No. 556, Bhoir Compound,<br>
           Near Padmavati Hotel,<br>
           Village – VAL, Bhiwandi – 421302
         </p>
-
-     
       </div>
 
     </div>
+
+
 
     <!-- BOTTOM BAR -->
     <div class="border-t border-gray-800 mt-10 pt-4 text-center text-gray-400 text-sm">
       <p>© 2025 Phoenix Additives. All Rights Reserved.</p>
       <p>Designed & Developed by
-        <span class="text-[#A7D8DE] font-semibold">  thundergits</span>
+        <span class="text-[#A7D8DE] font-semibold"> thundergits</span>
       </p>
     </div>
   </footer>
+
 
 
   <!-- Font Awesome Icons -->

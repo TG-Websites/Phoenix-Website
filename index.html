@@ -7,7 +7,9 @@
   <title>Phoenix Additives | Chemicals & Additives</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="Main.css">
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display:wght@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- <link href="https://api.fontshare.com/v2/css?f[]=clash-display:wght@400,500,600&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -16,85 +18,85 @@
 
 <body class="overflow-x-hidden">
 
-  <!--  NAVBAR  -->
-  <header class="fixed top-0 w-full z-50 shadow bg-white">
-    <div class="container mx-auto flex justify-between items-center p-4">
+  <!-- HEADER / NAVBAR (FIXED) -->
+<header class="fixed top-0 w-full z-50 shadow bg-white">
+  <div class="container mx-auto flex justify-between items-center p-4">
 
-      <!-- Logo -->
-      <div class="flex items-center gap-3">
-        <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
-        <h1 class=" tracking-wide">
-          Phoenix<br> Additives Chemicals
-        </h1>
-      </div>
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
+      <h1 class="tracking-wide leading-tight">
+        Phoenix<br> Additives Chemicals
+      </h1>
+    </div>
 
+    <!-- Desktop Menu (Visible only on large screens) -->
+    <nav class="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex gap-8 text-black font-medium">
+      <a href="#index.html" class="nav-link hover:text-[#0A3A45]">Home</a>
+      <a href="./about.html" class="nav-link hover:text-[#0A3A45]">About</a>
+      <a href="./index.html#products" class="hover:text-[#0A3A45]">Products</a>
+      <a href="./blog.html" class="nav-link hover:text-[#0A3A45]">Blog</a>
+      <a href="./Contact.html" class="nav-link hover:text-[#0A3A45]">Contact</a>
+    </nav>
 
-      <!-- Desktop Menu -->
-      <nav class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8 text-black font-medium">
-        <a href="./index.html" class="nav-link hover:text-[#0A3A45]">Home</a>
-        <a href="./about.html" class="nav-link hover:text-[#0A3A45]">About</a>
-        <a href="#products" class="hover:text-[#0A3A45]">Products</a>
-
-        <a href="./blog.html" class="nav-link hover:text-[#0A3A45]">Blog</a>
-        <a href="./Contact.html" class="nav-link hover:text-[#0A3A45]">Contact</a>
-      </nav>
-
-      <!-- CTA Desktop -->
-      <a href="./Contact.html">
-        <button
-          class="hidden md:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
-          Enquire Now
-        </button>
-      </a>
-
-      <!-- Mobile Hamburger -->
-      <button id="menuToggle" class="md:hidden text-black text-3xl">
-        ☰
+    <!-- CTA Desktop (Visible only on large screens) -->
+    <a href="Contact.html">
+      <button
+        class="hidden lg:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+        Enquire Now
       </button>
+    </a>
 
-    </div>
+    <!-- Mobile / Tablet Hamburger -->
+    <button id="menuToggle" class="lg:hidden text-black text-3xl">
+      ☰
+    </button>
 
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="hidden bg-white/90 backdrop-blur-md p-6 space-y-4 shadow-md md:hidden">
+  </div>
 
-      <a href="./index.html" class="mobile-link block text-black font-medium">Home</a>
-      <a href="./about.html" class="mobile-link block text-black font-medium">About</a>
-      <a href="./index.html#products" class="mobile-link block text-black font-medium">Products</a>
-      <a href="./blog.html" class="mobile-link block text-black font-medium">Blog</a>
-      <a href="./Contact.html" class="mobile-link block text-black font-medium">Contact</a>
-      <a href="Contact.html">
-        <button class="w-full px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
-          Enquire Now
-        </button>
-      </a>
-    </div>
-  </header>
+  <!-- MOBILE / TABLET MENU -->
+  <div id="mobileMenu" class="hidden bg-white/90 backdrop-blur-md p-6 space-y-4 shadow-md lg:hidden">
 
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const mobileLinks = document.querySelectorAll(".mobile-link");
+    <a href="./index.html" class="mobile-link block text-black font-medium">Home</a>
+    <a href="./about.html" class="mobile-link block text-black font-medium">About</a>
+    <a href="./index.html#products" class="mobile-link block text-black font-medium">Products</a>
+    <a href="./blog.html" class="mobile-link block text-black font-medium">Blog</a>
+    <a href="./Contact.html" class="mobile-link block text-black font-medium">Contact</a>
 
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
+    <a href="./Contact.html">
+      <button class="w-full px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+        Enquire Now
+      </button>
+    </a>
+  </div>
+</header>
 
-    mobileLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-      });
-    });
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
 
-    window.addEventListener("scroll", () => {
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
     });
+  });
 
-    document.addEventListener("click", (e) => {
-      if (!e.target.closest("header")) {
-        mobileMenu.classList.add("hidden");
-      }
-    });
-  </script>
+  window.addEventListener("scroll", () => {
+    mobileMenu.classList.add("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("header")) {
+      mobileMenu.classList.add("hidden");
+    }
+  });
+</script>
+
 
 
   <!--Hero  -->
@@ -105,7 +107,7 @@
 
       <!-- Slide 1 -->
       <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
-        <img src="./assets/FactoryssssStorePic.jpg" class="absolute inset-0 w-full h-full object-cover" />
+        <img src="./assets/screen-01.png" class="absolute inset-0 w-full h-full object-cover" />
 
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
@@ -456,168 +458,170 @@
 
   </section>
 
-  <!-- PRODUCTS SECTION -->
-  <section id="products" class="py-20 bg-[#A7D8DE]">
-    <div class="container mx-auto px-6">
+ <!-- PRODUCTS SECTION -->
+<section id="products" class="py-20 bg-[#A7D8DE]">
+  <div class="container mx-auto px-6">
 
-      <h2 class="text-4xl font-bold text-center mb-4">Our Products</h2>
-      <p class="text-center max-w-2xl mx-auto text-gray-700 mb-12">
-        Explore our complete range of high-performance additives engineered for laminates, resins, coatings and surface
-        finishing applications.
-      </p>
+    <h2 class="text-4xl font-bold text-center mb-4">Our Products</h2>
+    <p class="text-center max-w-2xl mx-auto text-gray-700 mb-12">
+      Explore our complete range of high-performance additives engineered for laminates, resins, coatings and surface
+      finishing applications.
+    </p>
 
-      <!-- GRID -->
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+    <!-- GRID -->
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
 
-        <!-- 1 — Release Agents -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t3.ftcdn.net/jpg/03/92/76/08/240_F_392760833_yVVpSJdUtkXiJcoPOZa2ZW4eTgqN7hyw.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">Industrial Release Agents</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Ensures smooth sheet separation and flawless laminate release.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="release.html">
-
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
+      <!-- 1 — Release Agents -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/Realease Agent.jpg" class="max-h-full max-w-full object-contain" />
         </div>
-
-        <!-- 2 — Wetting Agents -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t4.ftcdn.net/jpg/02/45/09/75/240_F_245097598_AuYDTpLJ06cYl189O6jwCmL5iKiSNCXN.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">Advanced Wetting Agents</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Improves surface wetting for cleaner, defect-free coating.
-          </p>
-          <div class="mt-4 flex justify-center">
-
-            <a href="wetting-Agent.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
+        <h3 class="text-xl font-semibold text-center">Industrial Release Agents</h3>
+        <p class="text-center text-gray-600 mt-2">Ensures smooth sheet separation and flawless laminate release.</p>
+        <div class="mt-4 flex justify-center">
+          <a href="release.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
         </div>
-
-        <!-- 3 — Gloss Enhancer -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t3.ftcdn.net/jpg/05/48/47/94/240_F_548479447_McS97KnYoRMQuy06Uv0dshil4IYONRyL.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">High-Gloss Surface Enhancers</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Boosts deeper shine, brightness and gloss clarity.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="high-glis.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- 4 — Anti-Blocking -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t4.ftcdn.net/jpg/05/84/40/59/240_F_584405909_ZruGSRsG72mXhIQ4IOE4r6MvEK8wVKR4.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">Anti-Blocking Additive</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Prevents sticking between layers for smoother processing.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="antiBlocking.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- 5 — Defoamer -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t3.ftcdn.net/jpg/08/25/69/30/240_F_825693035_ovsyYVwI9Ux0OgXTwtC9CzIKs3U72oq6.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">Defoamers & Air-Release</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Eliminates foam formation and ensures smooth coating flow.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="Product5.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- 6 — Plate Cleaning Agent -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t4.ftcdn.net/jpg/02/40/01/85/240_F_240018513_OnTdAZFkdOx2Y2HVfiyiRofDk8AtCkKR.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">Plate Cleaning Chemicals</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Removes ink, resin & contamination for clean production cycles.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="product6.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- 7 — MF Hardener -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t3.ftcdn.net/jpg/00/88/07/64/240_F_88076465_EJfwW7rBkpzrnFGiiZlun8ymp7X8BUdF.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">MF Resin Hardener</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Enhances curing, hardness, and chemical resistance in MF resins.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="product7.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- 8 — UF Hardener -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://t3.ftcdn.net/jpg/09/27/31/28/240_F_927312805_kFjSK6HU7hyYzeDcSx0kEkvzoa8L7Dxx.jpg"
-            class="w-full h-40 object-cover rounded-xl mb-4">
-          <h3 class="text-xl font-semibold text-center">UF Resin Hardener</h3>
-          <p class="text-center text-gray-600 mt-2">
-            Strengthens curing and bonding in urea-formaldehyde systems.
-          </p>
-          <div class="mt-4 flex justify-center">
-            <a href="product8.html">
-              <button
-                class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
-                See All
-              </button>
-            </a>
-          </div>
-        </div>
-
       </div>
+
+      <!-- 2 — Wetting Agents -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/wetting-agent.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">Advanced Wetting Agents</h3>
+        <p class="text-center text-gray-600 mt-2">Improves surface wetting for cleaner, defect-free coating.</p>
+        <div class="mt-4 flex justify-center">
+          <a href="wetting-Agent.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 — Gloss Enhancer -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/gloss enhancer.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">High-Gloss Surface Enhancers</h3>
+        <p class="text-center text-gray-600 mt-2">Boosts deeper shine, brightness and gloss clarity.</p>
+        <div class="mt-4 flex justify-center">
+          <a href="high-glis.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 — Anti-Blocking -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/Antiblocking-agents.jpg"
+               class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">Anti-Blocking Additive</h3>
+        <p class="text-center text-gray-600 mt-2">
+          Prevents sticking between layers for smoother processing.
+        </p>
+        <div class="mt-4 flex justify-center">
+          <a href="antiBlocking.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 — Defoamer -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/Antiblocking-agents.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">Defoamers & Air-Release</h3>
+        <p class="text-center text-gray-600 mt-2">
+          Eliminates foam formation and ensures smooth coating flow.
+        </p>
+        <div class="mt-4 flex justify-center">
+          <a href="Product5.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6 — Plate Cleaning Agent -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/Plate-Cleaner.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">Plate Cleaning Chemicals</h3>
+        <p class="text-center text-gray-600 mt-2">
+          Removes ink, resin & contamination for clean production cycles.
+        </p>
+        <div class="mt-4 flex justify-center">
+          <a href="product6.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 7 — MF Hardener -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/MF-Hardner.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">MF Resin Hardener</h3>
+        <p class="text-center text-gray-600 mt-2">
+          Enhances curing, hardness, and chemical resistance in MF resins.
+        </p>
+        <div class="mt-4 flex justify-center">
+          <a href="product7.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 8 — UF Hardener -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-1">
+        <div class="w-full aspect-[4/3] bg-[#F5F5F5] flex items-center justify-center rounded-xl mb-4 overflow-hidden">
+          <img src="./assets/UF-Agents.jpg" class="max-h-full max-w-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold text-center">UF Resin Hardener</h3>
+        <p class="text-center text-gray-600 mt-2">
+          Strengthens curing and bonding in urea-formaldehyde systems.
+        </p>
+        <div class="mt-4 flex justify-center">
+          <a href="product8.html">
+            <button
+              class="px-5 py-2 border border-[#0A3A45] text-[#0A3A45] rounded-xl hover:bg-[#0A3A45] hover:text-white transition">
+              See All
+            </button>
+          </a>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- RELATED PRODUCTS SLIDER -->
   <section class="max-w-7xl mx-auto px-6 py-16">

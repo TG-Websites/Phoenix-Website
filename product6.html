@@ -23,49 +23,63 @@
 
 <body class="bg-[#F5FAFB] text-gray-800">
 
-  <!-- HEADER / NAVBAR -->
-  <header class="fixed top-0 w-full z-50 shadow bg-white">
-    <div class="container mx-auto flex justify-between items-center p-4">
+ <!-- HEADER / NAVBAR (FIXED) -->
+<header class="fixed top-0 w-full z-50 shadow bg-white">
+  <div class="container mx-auto flex justify-between items-center p-4">
 
-       <!-- Logo -->
-      <div class="flex items-center gap-3">
-        <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
-        <h1 class=" tracking-wide">
-          Phoenix<br> Additives Chemicals
-        </h1>
-      </div>
-
-      <nav class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex gap-8 text-black font-medium">
-        <a href="./index.html" class="hover:text-[#0A3A45]">Home</a>
-        <a href="./about.html" class="hover:text-[#0A3A45]">About</a>
-        <a href="./index.html#products" class="hover:text-[#0A3A45]">Products</a>
-        <a href="./blog.html" class="hover:text-[#0A3A45]">Blog</a>
-        <a href="./Contact.html" class="hover:text-[#0A3A45]">Contact</a>
-      </nav>
-
-      <button class="hidden md:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
-        Enquire Now
-      </button>
-
-      <button id="menuToggle" class="md:hidden text-black text-3xl">☰</button>
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="./assets/pheonix-logo.png" alt="Phoenix Additives Logo" class="w-14 h-14">
+      <h1 class="tracking-wide leading-tight">
+        Phoenix<br> Additives Chemicals
+      </h1>
     </div>
 
-    <div id="mobileMenu" class="hidden bg-white/90 backdrop-blur-md p-6 space-y-4 shadow-md md:hidden">
-      <a href="./index.html" class="block font-medium">Home</a>
-      <a href="./about.html" class="block font-medium">About</a>
-      <a href="./index.html#products" class="block font-medium">Products</a>
-      <a href="./blog.html" class="block font-medium">Blog</a>
-      <a href="./Contact.html" class="block font-medium">Contact</a>
+    <!-- Desktop Menu (Visible only on large screens) -->
+    <nav class="hidden lg:flex gap-10 text-black font-medium">
+      <a href="./index.html" class="hover:text-[#0A3A45]">Home</a>
+      <a href="./about.html" class="hover:text-[#0A3A45]">About</a>
+      <a href="./index.html#products" class="hover:text-[#0A3A45]">Products</a>
+      <a href="./blog.html" class="hover:text-[#0A3A45]">Blog</a>
+      <a href="./contact.html" class="hover:text-[#0A3A45]">Contact</a>
+    </nav>
 
-      <button class="w-full px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
-        Enquire Now
-      </button>
-    </div>
-  </header>
+    <!-- CTA — visible only on large screens -->
+    <a href="./contact.html"
+      class="hidden lg:block px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl shadow hover:bg-[#8cc7cd]">
+      Enquire Now
+    </a>
 
-  <script>
-    menuToggle.onclick = () => mobileMenu.classList.toggle("hidden");
-  </script>
+    <!-- Mobile + Tablet Hamburger -->
+    <button id="menuToggle" class="lg:hidden text-black text-3xl">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- MOBILE MENU (also tablet-friendly) -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white/90 backdrop-blur-md p-6 space-y-4 shadow-md">
+
+    <a href="./index.html" class="block text-black font-medium">Home</a>
+    <a href="./about.html" class="block text-black font-medium">About</a>
+    <a href="./index.html#products" class="block text-black font-medium">Products</a>
+    <a href="./blog.html" class="block text-black font-medium">Blog</a>
+    <a href="./contact.html" class="block text-black font-medium">Contact</a>
+
+    <a href="./contact.html"
+      class="w-full block text-center px-6 py-2 bg-[#A7D8DE] text-black font-semibold rounded-xl hover:bg-[#8cc7cd]">
+      Enquire Now
+    </a>
+
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuToggle.onclick = () => mobileMenu.classList.toggle("hidden");
+</script>
 
   <!-- HERO -->
   <section class="pt-32 pb-16 bg-gradient-to-r from-[#0A3A45] to-[#145766] text-white">
@@ -85,10 +99,13 @@
         </a>
       </div>
 
-      <div>
-        <img
-          src="https://media.istockphoto.com/id/2148416270/photo/the-restaurant-chef-is-wiping-down-the-kitchen-counter.jpg?s=612x612&w=0&k=20&c=KUs2tmHzEtll5EoGXzmfXNCS-Vu9z150GCcAFkiNKa4="
-          class="w-full h-72 object-cover rounded-xl shadow-xl" alt="Plate Cleaning Agent">
+     <!-- IMAGE BOX (No Cropping + White Background) -->
+    <div class="relative flex justify-center">
+      <div class="relative w-full max-w-md aspect-[4/3] bg-white rounded-2xl flex items-center justify-center overflow-hidden shadow-2xl">
+        <img 
+          src="./assets/Plate-Cleaner.jpg"
+          class="max-w-full max-h-full object-contain rounded-lg"
+        />
       </div>
 
     </div>
@@ -193,23 +210,52 @@
     </div>
   </section>
 
-  <!-- Handling & Safety -->
-  <section class="max-w-7xl mx-auto px-6 py-16 bg-white">
-    <h2 class="text-3xl font-semibold text-[#0A3A45] mb-6">Handling & Safety</h2>
+   <!-- Handling & Safety -->
+<section class="max-w-7xl mx-auto px-6 py-16 bg-white">
+  <h2 class="text-3xl font-semibold text-[#0A3A45] mb-6">Handling & Safety</h2>
 
-    <p class="leading-7 text-gray-700">Available packaging options:</p>
+  <p class="leading-7 text-gray-700">Available packaging options:</p>
 
-    <ul class="list-disc pl-6 space-y-2 mt-3 leading-7 text-gray-700">
-      <li>1 Litre Bottle</li>
-      <li>5 Litre Can</li>
-      <li>35 Litre HDPE Drum</li>
-      <li>50 Litre Drum</li>
-    </ul>
+  <ul class="list-disc pl-6 space-y-2 mt-3 leading-7 text-gray-700">
+    <li>25 kg laminated HDPE Bag</li>
+    <li>50 kg Bag</li>
+    <li>100 kg Bag</li>
+    <li>210 kg Drum</li>
+  </ul>
 
-    <p class="mt-4 leading-7 text-gray-700">
-      Safety Datasheet (SDS) and Technical Datasheet (TDS) available on request.
-    </p>
-  </section>
+  <!-- Packaging Images -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+    
+    <!-- 25kg -->
+    <div class="flex flex-col items-center">
+      <img src="./assets/25kg.jpg" alt="25kg Bag" class="w-40 h-40 object-cover rounded-lg shadow">
+      <p class="mt-2 text-gray-700 font-medium">25 kg</p>
+    </div>
+
+    <!-- 50kg -->
+    <div class="flex flex-col items-center">
+      <img src="./assets/50kg.jpg" alt="50kg Bag" class="w-40 h-40 object-cover rounded-lg shadow">
+      <p class="mt-2 text-gray-700 font-medium">50 kg</p>
+    </div>
+
+    <!-- 100kg -->
+    <div class="flex flex-col items-center">
+      <img src="./assets/100kg.jpg" alt="100kg Bag" class="w-40 h-40 object-cover rounded-lg shadow">
+      <p class="mt-2 text-gray-700 font-medium">100 kg</p>
+    </div>
+
+    <!-- 210kg -->
+    <div class="flex flex-col items-center">
+      <img src="./assets/210kg.jpg" alt="210kg Drum" class="w-40 h-40 object-cover rounded-lg shadow">
+      <p class="mt-2 text-gray-700 font-medium">210 kg Drum</p>
+    </div>
+
+  </div>
+
+  <p class="mt-6 leading-7 text-gray-700">
+    Safety datasheets (MSDS) and technical datasheets (TDS) are available for download.
+  </p>
+</section>
 
    <!-- DOWNLOADS -->
   <section class="bg-[#E7F4F7] py-16 border-t border-b">

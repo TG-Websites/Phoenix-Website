@@ -1143,7 +1143,7 @@
   <section id="rfq" data-aos="fade-up">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-4">Request a Quote</h2>
-      <form class="glass p-6 rounded-xl shadow-md space-y-4">
+      <form   action="https://formspree.io/f/mgoovgyq" method="POST"  class="glass p-6 rounded-xl shadow-md space-y-4">
         <input type="text" placeholder="Full Name" class="w-full p-3 rounded border" required>
         <input type="email" placeholder="Email Address" class="w-full p-3 rounded border" required>
         <input type="text" placeholder="Company Name" class="w-full p-3 rounded border">
@@ -1519,12 +1519,12 @@
 
       <div class="grid md:grid-cols-2 gap-8 items-start">
         <!-- Contact Form -->
-        <form class="glass p-6 rounded-xl shadow-md space-y-4">
-          <input type="text" placeholder="Name"
+        <form action="https://formspree.io/f/mgoovgyq" method="POST" class="glass p-6 rounded-xl shadow-md space-y-4">
+          <input type="text" placeholder="Name" name="name"
             class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B6E75]">
-          <input type="email" placeholder="Email"
+          <input type="email" placeholder="Email" name="email"
             class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B6E75]">
-          <textarea placeholder="Your Message" rows="4"
+          <textarea placeholder="Your Message" rows="4" name="message"
             class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B6E75]"></textarea>
           <button type="submit"
             class="w-full bg-[#2B6E75] hover:bg-[#24595F] text-white font-semibold py-3 rounded transition-all duration-300">
